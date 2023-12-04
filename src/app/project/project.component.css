@@ -1,0 +1,89 @@
+.project img {
+    width: 14rem;
+    height: 9rem;
+    border-radius: 25px 25px 0 0;
+    transition: .3s;
+    margin-top: .5rem;
+}
+
+.project img:hover {
+    width: 14.2rem;
+    filter: blur(2px);
+
+}
+
+.img-blur {
+    width: 14.2rem;
+    filter: blur(2px);
+
+}
+
+.material-symbols-outlined:hover {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.project-btn {
+    position: absolute;
+    top: 1rem;
+    z-index: 2;
+    opacity: 1;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.project-btn a {
+    color: var(--dark);
+    margin: 0 1rem;
+
+
+}
+
+.project-btn span {
+    font-size: 2rem;
+    text-shadow: red 1px 2px ,var(--primary-light-text) -2px 2px;
+}
+
+.project {
+    width: 15rem;
+    background-color: var(--primary-light-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    margin: 1.5rem auto;
+    position: relative;
+    color: var(--dark);
+
+}
+
+.project-info {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px red;
+}
+
+.show {
+    opacity: 0;
+}
+
+.none {
+    display: none;
+}
+
+h1 {
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+@media (min-width: 650px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

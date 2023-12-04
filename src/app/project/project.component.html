@@ -1,0 +1,27 @@
+<h1 id="project">
+    MY <span class="main-text">
+        PROJECT
+    </span>
+</h1>
+<div class="container">
+
+    <div class="project" *ngFor="let item of project">
+        <img src={{item.image}} [ngClass]="{'img-blur':!show}" (mouseover)="showButton()" (mouseout)="hideButton()">
+        <div [ngClass]="{'project-btn':!show ,'show':show}" (mouseover)="showButton()" (mouseout)="hideButton()">
+            <a href={{item.code}} target="_blank" >
+                <span [ngClass]="{'material-symbols-outlined':!show,'none':show}">
+                    code
+                </span>
+            </a>
+            <a href={{item.linke}} target="_blank" >
+                <span [ngClass]="{'material-symbols-outlined':!show,'none':show}">
+                    visibility
+                </span>
+            </a>
+        </div>
+        <h3>{{item.title}}</h3>
+        <!-- <p class="project-info">
+            {{item.info}}
+        </p> -->
+    </div>
+</div>
