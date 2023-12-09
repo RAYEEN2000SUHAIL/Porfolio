@@ -1,0 +1,38 @@
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .skill-box{
+    background-color: var(--primary-light-text);
+    padding: .5rem;
+    border-radius: 50%;
+    margin:2rem auto;
+    display: grid;
+    place-content: center;
+ }
+.skill-box img{
+    width: 5rem;
+
+}
+
+@media (min-width: 900px) {
+    .skill ul{
+        display: flex;
+        margin: 2rem auto;
+        /* max-width: 900px;
+        justify-content: space-around; */
+
+    }
+    .skill-box{
+        margin: 1rem 2rem;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .skill-box{
+        margin: 1rem 3rem;
+    }
+}
